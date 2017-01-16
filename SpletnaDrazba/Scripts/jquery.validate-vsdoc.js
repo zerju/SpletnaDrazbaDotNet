@@ -47,7 +47,7 @@ $.extend($.fn, {
 		/// onkeyup, onclick). focusInvalid focuses elements when submitting a invalid form.
 		/// </summary>
 		/// <param name="options" type="Object">
-		/// A set of key/value pairs that configure the validate. All options are optional.
+		/// A set of key/value pairs that configure the validate. AllCategories options are optional.
 		/// </param>
 
 		// if nothing is selected, return nothing; can't chain anyway
