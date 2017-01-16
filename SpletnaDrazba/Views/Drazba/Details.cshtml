@@ -1,0 +1,82 @@
+﻿@model SpletnaDrazba.Models.Drazba
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Drazba</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumOd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumOd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumDo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NazivPredmeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazivPredmeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uporabnik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uporabnik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZacetnaCena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZacetnaCena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategorija)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategorija)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

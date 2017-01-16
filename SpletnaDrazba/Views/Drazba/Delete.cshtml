@@ -1,0 +1,88 @@
+﻿@model SpletnaDrazba.Models.Drazba
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Drazba</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumOd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumOd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumDo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DatumDo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NazivPredmeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NazivPredmeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Uporabnik)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Uporabnik)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Opis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Opis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ZacetnaCena)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ZacetnaCena)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kategorija)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kategorija)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

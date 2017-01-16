@@ -29,5 +29,7 @@ namespace SpletnaDrazba.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<SpletnaDrazba.Models.Drazba> Drazbas { get; set; }
     }
 }
