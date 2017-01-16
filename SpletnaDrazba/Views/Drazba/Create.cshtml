@@ -4,10 +4,12 @@
     ViewBag.Title = "Create";
 }
 
+
+
 <h2>Ustvari dražbo</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm(null,null,FormMethod.Post, new {enctype = "multipart/form-data"})) 
 {
     @Html.AntiForgeryToken()
     
@@ -131,7 +133,13 @@
             </div>
 
             </div>
-
+        <table>
+            <tr>
+                <td>File:</td>
+                <td><input type="file" name="Files" id="Files" multiple /></td>
+            </tr>
+           
+        </table>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Ustvari" class="btn btn-default" />

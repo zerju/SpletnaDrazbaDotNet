@@ -27,6 +27,7 @@ namespace SpletnaDrazba.Models
         [RegularExpression(@"(\d{1,10})+(.\d{1,2})?", ErrorMessage = "Pri decimalnih vrednostih je potrebna pika in samo dve decimalni mesti")]
         public double ZacetnaCena { get; set; }
         public string Kategorija { get; set; }
-        public List<string> Slike { get; set; }
+        [DataType(DataType.Text)]
+        public string Slike { get; set; }
     }
 }

@@ -67,3 +67,10 @@ D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.MicrosoftA
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.csprojResolveAssemblyReference.cache
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.dll
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.pdb
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\AecFramework.dll
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\AecFramework.Web.Mvc.dll
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.InitialCreate.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.GenerateResource.Cache
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges1.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges2.resources
