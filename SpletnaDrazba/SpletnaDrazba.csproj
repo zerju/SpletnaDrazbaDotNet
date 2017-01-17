@@ -180,6 +180,7 @@
     <Compile Include="Controllers\DrazbaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PonudbaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -206,6 +207,14 @@
     <Compile Include="Migrations\201701171330237_ponudbaModel.cs" />
     <Compile Include="Migrations\201701171330237_ponudbaModel.Designer.cs">
       <DependentUpon>201701171330237_ponudbaModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171714084_AddedDatumOddaje.cs" />
+    <Compile Include="Migrations\201701171714084_AddedDatumOddaje.Designer.cs">
+      <DependentUpon>201701171714084_AddedDatumOddaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171817054_ChangedZnesek.cs" />
+    <Compile Include="Migrations\201701171817054_ChangedZnesek.Designer.cs">
+      <DependentUpon>201701171817054_ChangedZnesek.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -291,6 +300,11 @@
     <Content Include="Views\Drazba\Details.cshtml" />
     <Content Include="Views\Drazba\Edit.cshtml" />
     <Content Include="Views\Drazba\Index.cshtml" />
+    <Content Include="Views\Ponudba\Create.cshtml" />
+    <Content Include="Views\Ponudba\Delete.cshtml" />
+    <Content Include="Views\Ponudba\Details.cshtml" />
+    <Content Include="Views\Ponudba\Edit.cshtml" />
+    <Content Include="Views\Ponudba\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -321,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701171330237_ponudbaModel.resx">
       <DependentUpon>201701171330237_ponudbaModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171714084_AddedDatumOddaje.resx">
+      <DependentUpon>201701171714084_AddedDatumOddaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171817054_ChangedZnesek.resx">
+      <DependentUpon>201701171817054_ChangedZnesek.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
