@@ -5,12 +5,12 @@
 	ViewBag.Title = "Details";
 }
 @section styles {
-    <link href="@Url.Content("~/Content/jquery.countdown.css")" rel="stylesheet" type="text/css" />
+	<link href="@Url.Content("~/Content/jquery.countdown.css")" rel="stylesheet" type="text/css" />
 <style type="text/css">
-    #defaultCountdown {
-        width: 240px;
-        height: 45px;
-    }
+	#defaultCountdown {
+		width: 240px;
+		height: 45px;
+	}
 
  
 </style>
@@ -19,153 +19,162 @@
 @section Scripts
 {
 
-    <script src="@Url.Content("~/Scripts/jquery.plugin.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery.countdown.js")"></script>
-    <script src="@Url.Content("~/Scripts/jquery.countdown-sl.js")"></script>
+	<script src="@Url.Content("~/Scripts/jquery.plugin.js")"></script>
+	<script src="@Url.Content("~/Scripts/jquery.countdown.js")"></script>
+	<script src="@Url.Content("~/Scripts/jquery.countdown-sl.js")"></script>
 
-    <script>
-        var date1 = $("#konec_drazbe").text().trim();
-        var parts1 = date1.split(' ');
-        var parts = parts1[0].split('/');
-        var hoursminutes = parts1[1].split(':');
-        var myDate = new Date(parts[2] + ',' + parts[1] + ',' + parts[0]);
-        myDate.setHours(hoursminutes[0]);
-        myDate.setMinutes(hoursminutes[1]);
-        var trenutenDatum = new Date(new Date().toISOString());
-        if (myDate < trenutenDatum) {//se disabla za višanje zneskov če je dražba potekla
-            $('#submitZnesek').attr("disabled", true);
-            $('#znesek').attr('disabled', true);
+	<script>
+		var date1 = $("#konec_drazbe").text().trim();
+		var parts1 = date1.split(' ');
+		var parts = parts1[0].split('/');
+		var hoursminutes = parts1[1].split(':');
+		var myDate = new Date(parts[2] + ',' + parts[1] + ',' + parts[0]);
+		myDate.setHours(hoursminutes[0]);
+		myDate.setMinutes(hoursminutes[1]);
+		var trenutenDatum = new Date(new Date().toISOString());
+		if (myDate < trenutenDatum) {//se disabla za višanje zneskov če je dražba potekla
+			$('#submitZnesek').attr("disabled", true);
+			$('#znesek').attr('disabled', true);
 
-        }
-        
-        console.log(myDate);
-        console.log(trenutenDatum);
-        $(function() { //countdown timer
+		}
+		
+		console.log(myDate);
+		console.log(trenutenDatum);
+		$(function() { //countdown timer
 
-            
-            $('#defaultCountdown').countdown({ until: myDate, onExpiry: ended });
-            $('#year').text(myDate.getFullYear());
+			
+			$('#defaultCountdown').countdown({ until: myDate, onExpiry: ended });
+			$('#year').text(myDate.getFullYear());
 
-        });
+		});
 
-        function ended() {
-            $('#submitZnesek').attr("disabled", true);
-            $('#znesek').attr('disabled', true);
-        }
-        
+		function ended() {
+			$('#submitZnesek').attr("disabled", true);
+			$('#znesek').attr('disabled', true);
+		}
+		
 
-    </script>
+	</script>
 }
-<h2>Details</h2>
+<h2>Dražba</h2>
 <div>
-    <h4>Drazba</h4>
-    <hr />
-    <p><!-- countdown timer -->
-        <h2>Čas do konca dražbe</h2>
-        <div id="defaultCountdown"></div>
-    </p>
-    <div style="float: right;"><!-- oddajanje ponudbe ter največja trenutna ponudba -->
-        @using (Html.BeginForm("OddajPonudbo","Drazba", FormMethod.Post))
-        {
-            <h2>Trenutna ponudba: <strong>@ViewData["trenutnaPonudba"]€</strong>
-            </h2>
-            
-            @Html.Editor("znesek", new { htmlAttributes = new { @class = "form-control", Type = "number", Placeholder = "Nova ponudba", min = @ViewData["minPonudba"] } })
-            @Html.HiddenFor(d => d.Id)
-            <input type="submit" class="btn btn-info" value="Oddaj" style="margin-left: 40%; margin-top: 5%;" id="submitZnesek"/>
-        }
-    </div>
-    <dl class="dl-horizontal" style="float: left;"><!-- podatki o dražbi -->
-        <dt>
-            @Html.DisplayNameFor(model => model.DatumOd)
-        </dt>
+	<hr />
+	<p><!-- countdown timer -->
+		<h2>Čas do konca dražbe</h2>
+		<div id="defaultCountdown"></div>
+	</p>
+	<div style="float: right;"><!-- oddajanje ponudbe ter največja trenutna ponudba -->
+		@using (Html.BeginForm("OddajPonudbo","Drazba", FormMethod.Get))
+		{
+			<h2>Trenutna ponudba: <strong>@ViewData["trenutnaPonudba"]€</strong>
+			</h2>
+			
+			
+			@Html.HiddenFor(d => d.Id)
+			@Html.Editor("znesek", new { htmlAttributes = new { @class = "form-control", Type = "number", Placeholder = "Nova ponudba", min = @ViewData["minPonudba"], style="margin-left:10%" } })
+			<input type="submit" class="btn btn-info" value="Oddaj" style="margin-left: 40%; margin-top: 5%;" id="submitZnesek"/>
+		}
+		<div align="center" style="margin-top: 2%">
+			@Html.ActionLink(
+			"Zgodovina Sprememb",
+			"Index",                         // controller action
+			"Ponudba",        // controller
+			new { Model.Id },         // action parameters aka route values
+			new { @class = "btn btn-info" })
+		</div>
+	   
+	</div>
+	<dl class="dl-horizontal" style="float: left;font-size: 17px"><!-- podatki o dražbi -->
+		<dt>
+			@Html.DisplayNameFor(model => model.DatumOd)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DatumOd)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.DatumOd)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DatumDo)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.DatumDo)
+		</dt>
 
-        <dd id="konec_drazbe">
-            @Html.DisplayFor(model => model.DatumDo)
-        </dd>
+		<dd id="konec_drazbe">
+			@Html.DisplayFor(model => model.DatumDo)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Ime)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.Ime)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Ime)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.Ime)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.NazivPredmeta)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.NazivPredmeta)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.NazivPredmeta)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.NazivPredmeta)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Uporabnik)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.Uporabnik)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Uporabnik)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.Uporabnik)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Opis)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.Opis)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Opis)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.Opis)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ZacetnaCena)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.ZacetnaCena)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ZacetnaCena)
-        </dd>
+		<dd>
+			@Html.DisplayFor(model => model.ZacetnaCena)
+		</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Kategorija)
-        </dt>
+		<dt>
+			@Html.DisplayNameFor(model => model.Kategorija)
+		</dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Kategorija)
-        </dd>
-    </dl>
+		<dd>
+			@Html.DisplayFor(model => model.Kategorija)
+		</dd>
+	</dl>
 </div>
 @if (Model.Slike != null) { 
 
-        //pridobi slike in jih splita tako da dobi poti za posamezne slike
-        string[] slike = {};
+		//pridobi slike in jih splita tako da dobi poti za posamezne slike
+		string[] slike = {};
 
-    slike = Model.Slike.Split(';');
+	slike = Model.Slike.Split(';');
 
-    int count = 0;
+	int count = 0;
 
 
 <div class="col-md-10 jumbotron" align="center"><!-- galerija -->
-    @foreach (string slika in slike)
-    {
-        <img src="@Url.Content(slika)" name="img@(count)" alt="IMAGES" width="150" height="150" style="margin: 1%" onmouseover="preview.src=img@(count).src"/>
-        count++;
-    }
-    
+	@foreach (string slika in slike)
+	{
+		<img src="@Url.Content(slika)" name="img@(count)" alt="IMAGES" width="150" height="150" style="margin: 1%" onmouseover="preview.src=img@(count).src"/>
+		count++;
+	}
+	
 </div>
 
 <div class="col-md-10" align="center">
-    <img src="@Url.Content(slike[0])" alt="IMAGES" width="350" height="350" style="margin: 1%" name="preview" />
+	<img src="@Url.Content(slike[0])" alt="IMAGES" width="350" height="350" style="margin: 1%" name="preview" />
 </div>
 
 }
-            
+			
 
 
 <p style="clear: both;">

@@ -10,9 +10,10 @@ namespace SpletnaDrazba.Models
     {
         [Key]
         public int Id { get; set; }
-        public double Znesek { get; set; }
+        public decimal Znesek { get; set; }
         public virtual Drazba Drazba { get; set; }
-
+        [Display(Name="Datum Oddaje")]
+        public DateTime DatumOddaje { get; set; }
         public virtual ApplicationUser User { get; set; }
     }
 }

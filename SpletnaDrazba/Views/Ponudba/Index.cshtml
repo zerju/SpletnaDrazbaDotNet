@@ -1,0 +1,43 @@
+﻿@model IEnumerable<SpletnaDrazba.Models.Ponudba>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Zgodovina ponudb</h2>
+
+<!--p>
+@Html.ActionLink("Create New", "Create")
+</p-->
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Znesek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatumOddaje)
+        </th>
+        <th></th>
+    </tr>
+@{ int id = 0;}
+@foreach (var item in Model)
+{
+    id = item.Drazba.Id;
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Znesek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatumOddaje)
+        </td>
+        
+        <!--td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td-->
+    </tr>
+}
+    
+</table>

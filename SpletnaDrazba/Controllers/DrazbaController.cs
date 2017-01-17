@@ -41,12 +41,15 @@ namespace SpletnaDrazba.Controllers
             if (zadnjaPonudba == null)
             {
                 ViewData["trenutnaPonudba"] = drazba.ZacetnaCena;
-                ViewData["minPonudba"] = drazba.ZacetnaCena+1;
+                double visanjePonudbe = drazba.ZacetnaCena / 10;
+
+                ViewData["minPonudba"] = Math.Round(drazba.ZacetnaCena + visanjePonudbe);
             }
             else
             {
                 ViewData["trenutnaPonudba"] = zadnjaPonudba.Znesek;
-                ViewData["minPonudba"] = zadnjaPonudba.Znesek + 1;
+                decimal visanjePonudbe = zadnjaPonudba.Znesek / 10;
+                ViewData["minPonudba"] = Math.Round(zadnjaPonudba.Znesek + visanjePonudbe);
             }
             return View(drazba);
         }
@@ -91,13 +94,14 @@ namespace SpletnaDrazba.Controllers
             return View(drazba);
         }
 
-        [HttpPost]
-        public ActionResult OddajPonudbo(int id,int znesek)
+        [HttpGet]
+        public ActionResult OddajPonudbo(int id,decimal znesek)
         {
             Drazba drazba = db.Drazbas.Single(d => d.Id == id);
             Ponudba ponudba = new Ponudba();
             ponudba.Drazba = drazba;
             ponudba.Znesek = znesek;
+            ponudba.DatumOddaje = DateTime.Now;
             db.Ponudba.Add(ponudba);
             db.SaveChanges();
             return RedirectToAction("Details/"+id.ToString());
