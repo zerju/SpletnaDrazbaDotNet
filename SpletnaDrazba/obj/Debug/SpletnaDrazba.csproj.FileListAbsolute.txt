@@ -74,7 +74,86 @@ D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.Generat
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges1.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges2.resources
+<<<<<<< HEAD
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.newModel.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ponudbaModel.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.AddedDatumOddaje.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ChangedZnesek.resources
+=======
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\csc.exe
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\vbc.exe
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\VBCSCompiler.exe
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\SpletnaDrazba.dll.config
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\SpletnaDrazba.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\SpletnaDrazba.pdb
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\AecFramework.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\AecFramework.Web.Mvc.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Antlr3.Runtime.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\EntityFramework.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\EntityFramework.SqlServer.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Newtonsoft.Json.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Owin.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Helpers.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Mvc.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Optimization.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Razor.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.WebPages.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.WebPages.Razor.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\WebGrease.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Helpers.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Mvc.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Optimization.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.Razor.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.WebPages.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\System.Web.WebPages.Razor.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Antlr3.Runtime.pdb
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Newtonsoft.Json.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\EntityFramework.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\EntityFramework.SqlServer.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.csprojResolveAssemblyReference.cache
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.InitialCreate.resources
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges.resources
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges1.resources
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges2.resources
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.GenerateResource.Cache
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.pdb
+>>>>>>> d1a74a3384c0b1b0d1b8096cef4062fa7e0229d8
