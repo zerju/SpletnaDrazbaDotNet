@@ -30,9 +30,23 @@ namespace SpletnaDrazba.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Drazba drazba = db.Drazbas.Find(id);
+            
+            var ponudbe = db.Ponudba.Where(p => p.Drazba.Id == id);
+            var zadnjaPonudba = ponudbe.OrderByDescending(p => p.Id).FirstOrDefault();
+            
             if (drazba == null)
             {
                 return HttpNotFound();
+            }
+            if (zadnjaPonudba == null)
+            {
+                ViewData["trenutnaPonudba"] = drazba.ZacetnaCena;
+                ViewData["minPonudba"] = drazba.ZacetnaCena+1;
+            }
+            else
+            {
+                ViewData["trenutnaPonudba"] = zadnjaPonudba.Znesek;
+                ViewData["minPonudba"] = zadnjaPonudba.Znesek + 1;
             }
             return View(drazba);
         }
@@ -58,11 +72,11 @@ namespace SpletnaDrazba.Controllers
             foreach (var file in picture.Files)
             {
                 var filename = Path.GetFileName(file.FileName);
-                var path = Path.Combine(Server.MapPath("~/Content/images"), filename + drazba.Id.ToString());
+                var path = Path.Combine(Server.MapPath("~/Content/images"), +trenutniID + filename);
                 string semicolumn = "";
                 if (count > 0)
                     semicolumn = ";";
-                filePathList = filePathList+semicolumn+"~/Content/images/"+ trenutniID + 1.ToString() + filename;
+                filePathList = filePathList+semicolumn+"~/Content/images/"+ trenutniID + filename;
                 file.SaveAs(path);
                 count++;
             }
@@ -75,6 +89,18 @@ namespace SpletnaDrazba.Controllers
             }
 
             return View(drazba);
+        }
+
+        [HttpPost]
+        public ActionResult OddajPonudbo(int id,int znesek)
+        {
+            Drazba drazba = db.Drazbas.Single(d => d.Id == id);
+            Ponudba ponudba = new Ponudba();
+            ponudba.Drazba = drazba;
+            ponudba.Znesek = znesek;
+            db.Ponudba.Add(ponudba);
+            db.SaveChanges();
+            return RedirectToAction("Details/"+id.ToString());
         }
 
         // GET: Drazba/Edit/5

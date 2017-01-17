@@ -31,5 +31,6 @@ namespace SpletnaDrazba.Models
         }
 
         public System.Data.Entity.DbSet<SpletnaDrazba.Models.Drazba> Drazbas { get; set; }
+        public System.Data.Entity.DbSet<SpletnaDrazba.Models.Ponudba> Ponudba { get; set; }
     }
 }

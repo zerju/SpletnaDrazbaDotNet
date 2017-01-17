@@ -1,4 +1,6 @@
-﻿@model SpletnaDrazba.Models.Drazba
+﻿@using System.Activities.Expressions
+@using System.Web.UI.WebControls
+@model SpletnaDrazba.Models.Drazba
 
 @{
     ViewBag.Title = "Create";
@@ -18,9 +20,9 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.DatumOd, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.DatumOd, htmlAttributes: new { @class = "control-label col-md-2"})
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DatumOd, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DatumOd, new { htmlAttributes = new { @class = "form-control", PlaceHolder = "01/01/2000 02:55" } })
                 @Html.ValidationMessageFor(model => model.DatumOd, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -28,7 +30,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.DatumDo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DatumDo, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DatumDo, new { htmlAttributes = new { @class = "form-control", PlaceHolder = "01/01/2000 02:55" } })
                 @Html.ValidationMessageFor(model => model.DatumDo, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -68,7 +70,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.ZacetnaCena, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ZacetnaCena, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.ZacetnaCena, new { htmlAttributes = new { @class = "form-control", Type = "number" } })
                 @Html.ValidationMessageFor(model => model.ZacetnaCena, "", new { @class = "text-danger" })
             </div>
         </div>
