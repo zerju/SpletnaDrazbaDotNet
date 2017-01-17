@@ -207,6 +207,18 @@
     <Compile Include="Migrations\201701171330237_ponudbaModel.Designer.cs">
       <DependentUpon>201701171330237_ponudbaModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701171806577_RegistracijaMigration.cs" />
+    <Compile Include="Migrations\201701171806577_RegistracijaMigration.Designer.cs">
+      <DependentUpon>201701171806577_RegistracijaMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171843574_ImeRegistracija.cs" />
+    <Compile Include="Migrations\201701171843574_ImeRegistracija.Designer.cs">
+      <DependentUpon>201701171843574_ImeRegistracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171906302_FirstName.cs" />
+    <Compile Include="Migrations\201701171906302_FirstName.Designer.cs">
+      <DependentUpon>201701171906302_FirstName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Drazba.cs" />
@@ -321,6 +333,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701171330237_ponudbaModel.resx">
       <DependentUpon>201701171330237_ponudbaModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171806577_RegistracijaMigration.resx">
+      <DependentUpon>201701171806577_RegistracijaMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171843574_ImeRegistracija.resx">
+      <DependentUpon>201701171843574_ImeRegistracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171906302_FirstName.resx">
+      <DependentUpon>201701171906302_FirstName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

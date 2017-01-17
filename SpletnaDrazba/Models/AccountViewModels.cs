@@ -79,6 +79,14 @@ namespace SpletnaDrazba.Models
         [Display(Name = "Potrdi geslo")]
         [Compare("Password", ErrorMessage = "Gesli se ne ujemata.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Ime")]
+        public string FirstName { get; set; }
+
+        [Required]
+        [Display(Name = "Priimek")]
+        public string LastName { get; set; }
     }
 
     public class ResetPasswordViewModel
