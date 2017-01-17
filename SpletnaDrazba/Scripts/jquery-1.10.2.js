@@ -1011,7 +1011,7 @@ function isArraylike( obj ) {
 		typeof length === "number" && length > 0 && ( length - 1 ) in obj );
 }
 
-// All jQuery objects should point back to these
+// AllCategories jQuery objects should point back to these
 rootjQuery = jQuery(document);
 /*!
  * Sizzle CSS Selector Engine v1.10.2
@@ -1299,7 +1299,7 @@ function Sizzle( selector, context, results, seed ) {
 		}
 	}
 
-	// All others
+	// AllCategories others
 	return select( selector.replace( rtrim, "$1" ), context, results, seed );
 }
 
@@ -3274,7 +3274,7 @@ jQuery.extend({
 			func.call( deferred, deferred );
 		}
 
-		// All done!
+		// AllCategories done!
 		return deferred;
 	},
 
@@ -4374,7 +4374,7 @@ jQuery.extend({
 			return jQuery.prop( elem, name, value );
 		}
 
-		// All attributes are lowercase
+		// AllCategories attributes are lowercase
 		// Grab necessary hook if one is defined
 		if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
 			name = name.toLowerCase();

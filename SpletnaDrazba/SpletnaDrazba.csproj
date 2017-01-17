@@ -44,6 +44,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AecFramework, Version=2.2.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AecFramework.2.2.07\lib\net40\AecFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AecFramework.Web.Mvc, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AecFramework.Web.Mvc.1.4.0\lib\net40\AecFramework.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -168,22 +176,54 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\DrazbaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701161615434_InitialCreate.cs" />
+    <Compile Include="Migrations\201701161615434_InitialCreate.Designer.cs">
+      <DependentUpon>201701161615434_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701161927540_SomeChanges.cs" />
+    <Compile Include="Migrations\201701161927540_SomeChanges.Designer.cs">
+      <DependentUpon>201701161927540_SomeChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701161931354_SomeChanges1.cs" />
+    <Compile Include="Migrations\201701161931354_SomeChanges1.Designer.cs">
+      <DependentUpon>201701161931354_SomeChanges1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701161942007_SomeChanges2.cs" />
+    <Compile Include="Migrations\201701161942007_SomeChanges2.Designer.cs">
+      <DependentUpon>201701161942007_SomeChanges2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Drazba.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Picture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\auction.jpg" />
+    <Content Include="Content\images\audio-video-rentals.png" />
+    <Content Include="Content\images\CLASS_SPORTS-CARS_PNG.png" />
+    <Content Include="Content\images\clothesline-silhouette.png" />
+    <Content Include="Content\images\Home.png" />
+    <Content Include="Content\images\smartphones-png.png" />
+    <Content Include="Content\images\sport.png" />
+    <Content Include="Content\images\technologyobjects.png" />
+    <Content Include="Content\images\video-audio-icon.png" />
+    <Content Include="Content\jquery.countdown.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\jquery.countdown.js" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
@@ -192,6 +232,8 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.countdown-sl.js" />
+    <Content Include="Scripts\jquery.plugin.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -234,6 +276,12 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Category\AllCategories.cshtml" />
+    <Content Include="Views\Drazba\Create.cshtml" />
+    <Content Include="Views\Drazba\Delete.cshtml" />
+    <Content Include="Views\Drazba\Details.cshtml" />
+    <Content Include="Views\Drazba\Edit.cshtml" />
+    <Content Include="Views\Drazba\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +293,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701161615434_InitialCreate.resx">
+      <DependentUpon>201701161615434_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701161927540_SomeChanges.resx">
+      <DependentUpon>201701161927540_SomeChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701161931354_SomeChanges1.resx">
+      <DependentUpon>201701161931354_SomeChanges1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701161942007_SomeChanges2.resx">
+      <DependentUpon>201701161942007_SomeChanges2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
