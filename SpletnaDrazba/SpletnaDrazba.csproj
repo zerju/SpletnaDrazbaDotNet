@@ -199,12 +199,21 @@
     <Compile Include="Migrations\201701161942007_SomeChanges2.Designer.cs">
       <DependentUpon>201701161942007_SomeChanges2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701171321519_newModel.cs" />
+    <Compile Include="Migrations\201701171321519_newModel.Designer.cs">
+      <DependentUpon>201701171321519_newModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171330237_ponudbaModel.cs" />
+    <Compile Include="Migrations\201701171330237_ponudbaModel.Designer.cs">
+      <DependentUpon>201701171330237_ponudbaModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Drazba.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Picture.cs" />
+    <Compile Include="Models\Ponudba.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -306,6 +315,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701161942007_SomeChanges2.resx">
       <DependentUpon>201701161942007_SomeChanges2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171321519_newModel.resx">
+      <DependentUpon>201701171321519_newModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171330237_ponudbaModel.resx">
+      <DependentUpon>201701171330237_ponudbaModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -74,3 +74,5 @@ D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.Generat
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges1.resources
 D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges2.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.newModel.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ponudbaModel.resources
