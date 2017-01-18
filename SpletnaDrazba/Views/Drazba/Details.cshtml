@@ -37,12 +37,12 @@
 			$('#znesek').attr('disabled', true);
 
 		}
-		
+
 		console.log(myDate);
 		console.log(trenutenDatum);
 		$(function() { //countdown timer
 
-			
+
 			$('#defaultCountdown').countdown({ until: myDate, onExpiry: ended });
 			$('#year').text(myDate.getFullYear());
 
@@ -52,17 +52,14 @@
 			$('#submitZnesek').attr("disabled", true);
 			$('#znesek').attr('disabled', true);
 
-		    
-			var val = @Model.Id 
-		    $.post('<%= Url.Action("Account/PosljiEmail") %>', { value: val }, function (result) {
-		        // TODO: handle the success
-		        alert('Dražba je končana!');
-		    });
+
+			var val = @Model.Id
+		    location.href = '/../../../Account/PosljiEmail?val=' + val;
 
 
 
 		}
-		
+
 
 	</script>
 }
