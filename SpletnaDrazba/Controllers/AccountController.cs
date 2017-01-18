@@ -402,6 +402,18 @@ namespace SpletnaDrazba.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Session["CurrentUserID"] = null;
+            return RedirectToAction("Index", "Home");
+        }
+
+        // POST: /Account/PosljiEmail
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult PosljiEmail(string idDrazbe)
+        {
+            var drazba = db.Drazbas.Find(idDrazbe);
+            
+            
             return RedirectToAction("Index", "Home");
         }
 
