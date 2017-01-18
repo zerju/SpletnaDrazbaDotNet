@@ -228,15 +228,9 @@
     <Compile Include="Migrations\201701180954249_DeletedUserNameAndLast.Designer.cs">
       <DependentUpon>201701180954249_DeletedUserNameAndLast.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Migrations\201701181054280_DrazbaUser.cs" />
-    <Compile Include="Migrations\201701181054280_DrazbaUser.Designer.cs">
-      <DependentUpon>201701181054280_DrazbaUser.cs</DependentUpon>
-=======
     <Compile Include="Migrations\201701181029179_NekMigration.cs" />
     <Compile Include="Migrations\201701181029179_NekMigration.Designer.cs">
       <DependentUpon>201701181029179_NekMigration.cs</DependentUpon>
->>>>>>> origin/master
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -444,13 +438,8 @@
     <EmbeddedResource Include="Migrations\201701180954249_DeletedUserNameAndLast.resx">
       <DependentUpon>201701180954249_DeletedUserNameAndLast.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Migrations\201701181054280_DrazbaUser.resx">
-      <DependentUpon>201701181054280_DrazbaUser.cs</DependentUpon>
-=======
     <EmbeddedResource Include="Migrations\201701181029179_NekMigration.resx">
       <DependentUpon>201701181029179_NekMigration.cs</DependentUpon>
->>>>>>> origin/master
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
