@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using SpletnaDrazba.Models;
+using System.Net.Mail;
 
 namespace SpletnaDrazba.Controllers
 {
@@ -409,11 +410,42 @@ namespace SpletnaDrazba.Controllers
         // POST: /Account/PosljiEmail
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult PosljiEmail(string idDrazbe)
+        public ActionResult PosljiEmail(int idDrazbe)
         {
             var drazba = db.Drazbas.Find(idDrazbe);
-            
-            
+            //var ponudba = db.Ponudba.Max(Znesek);
+            var ponudbe = db.Ponudba.Where(p => p.Drazba.Id == idDrazbe);
+            var zadnjaPonudba = ponudbe.OrderByDescending(p => p.Id).FirstOrDefault();
+
+            string mailKupec = zadnjaPonudba.User.Email;
+            string mailProdajalec = drazba.User.Email;
+
+            MailMessage mail = new MailMessage();
+
+            SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+            smtpServer.Credentials = new System.Net.NetworkCredential("drazbajina", "administrato");
+            smtpServer.Port = 587; // Gmail works on this port
+
+            mail.From = new MailAddress("drazbajina@gmail.com");
+            //mailKupec
+            mail.To.Add("drazbajina@gmail.com");
+            mail.Subject = "Dražba se je končala";
+            mail.Body = "Vaša dražba z IDjem " + idDrazbe +" se je končala. Najvišjo ponudbo je oddal uporabnik " + mailKupec + ". Preko tega Emaila ga lahko tudi kontaktirate. ";
+            smtpServer.Send(mail);
+
+            MailMessage mail2 = new MailMessage();
+
+            SmtpClient smtpServer2 = new SmtpClient("smtp.gmail.com");
+            smtpServer2.Credentials = new System.Net.NetworkCredential("drazbajina", "administrato");
+            smtpServer2.Port = 587; // Gmail works on this port
+
+            mail2.From = new MailAddress("drazbajina@gmail.com");
+            //mailProdajalec
+            mail2.To.Add("drazbajina@gmail.com");
+            mail2.Subject = "Dražba se je končala";
+            mail2.Body = "Čestitamo! Uspeli ste oddati najvišjo ponudbo na dražbi z IDjem " +idDrazbe + "! Prodajalca lahko kontaktirate preko naslednjega emaila. " + mailProdajalec;
+            smtpServer2.Send(mail2);
+
             return RedirectToAction("Index", "Home");
         }
 

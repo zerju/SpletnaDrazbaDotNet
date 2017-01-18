@@ -1,50 +1,3 @@
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\csc.exe
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\System.Collections.Immutable.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\System.Reflection.Metadata.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\vbc.exe
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\VBCSCompiler.exe
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\roslyn\VBCSCompiler.exe.config
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\SpletnaDrazba.dll.config
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\SpletnaDrazba.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\SpletnaDrazba.pdb
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.Helpers.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.Mvc.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.Optimization.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.Razor.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.WebPages.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.WebPages.Deployment.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\System.Web.WebPages.Razor.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Antlr3.Runtime.pdb
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Newtonsoft.Json.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\EntityFramework.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\EntityFramework.SqlServer.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.AspNet.Identity.Core.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.AspNet.Identity.Owin.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Host.SystemWeb.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.Facebook.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.Cookies.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.OAuth.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.Google.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.Twitter.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.csprojResolveAssemblyReference.cache
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.dll
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.pdb
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.InitialCreate.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.GenerateResource.Cache
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges1.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges2.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\csc.exe
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -89,25 +42,14 @@ C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDot
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges1.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SomeChanges2.resources
-C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.GenerateResource.Cache
-C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.dll
-C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.pdb
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.newModel.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ponudbaModel.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.RegistracijaMigration.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ImeRegistracija.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.FirstName.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.newModel.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ponudbaModel.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.RegistracijaMigration.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ImeRegistracija.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.FirstName.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SpremenjenaPonudba.resources
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.DeletedUserNameAndLast.resources
-<<<<<<< HEAD
-D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.DrazbaUser.resources
-=======
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SpremenjenaPonudba.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.DeletedUserNameAndLast.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.NekMigration.resources
->>>>>>> origin/master
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.csproj.GenerateResource.Cache
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.dll
+C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.pdb
