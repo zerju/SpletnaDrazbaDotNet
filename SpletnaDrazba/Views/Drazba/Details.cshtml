@@ -51,6 +51,16 @@
 		function ended() {
 			$('#submitZnesek').attr("disabled", true);
 			$('#znesek').attr('disabled', true);
+
+		    
+			var val = @Model.Id 
+		    $.post('<%= Url.Action("Account/PosljiEmail") %>', { value: val }, function (result) {
+		        // TODO: handle the success
+		        alert('Dražba je končana!');
+		    });
+
+
+
 		}
 		
 
@@ -175,7 +185,6 @@
 
 }
 			
-
 
 <p style="clear: both;">
 	@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
