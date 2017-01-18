@@ -1,4 +1,5 @@
-﻿@model IEnumerable<SpletnaDrazba.Models.Drazba>
+﻿@using SpletnaDrazba.Models
+@model IEnumerable<SpletnaDrazba.Models.Drazba>
 
 @{
     ViewBag.Title = "Index";
@@ -52,9 +53,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.NazivPredmeta)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Uporabnik)
-        </td>
+        
         <td>
             @Html.DisplayFor(modelItem => item.Opis)
         </td>

@@ -160,7 +160,7 @@
 		</dd>
 	</dl>
 </div>
-@if (Model.Slike != null) { 
+@{ 
 
 		//pridobi slike in jih splita tako da dobi poti za posamezne slike
 		string[] slike = {};
@@ -171,19 +171,19 @@
 
 
 <div class="col-md-10 jumbotron" align="center"><!-- galerija -->
-	@foreach (string slika in slike)
-    {   if(slika != null || slike.Length > 0) { 
+	@foreach (string slika in slike) {
+
         <img src="@Url.Content(slika)" name="img@(count)" alt="IMAGES" width="150" height="150" style="margin: 1%" onmouseover="preview.src=img@(count).src"/>
-        }
+        
         count++;
     }
 	
 </div>
 
 <div class="col-md-10" align="center">
-    @if(slike.Length > 0) { 
+   
         <img src="@Url.Content(slike[0])" alt="IMAGES" width="350" height="350" style="margin: 1%" name="preview" />
-    }
+    
 </div>
 
 }
