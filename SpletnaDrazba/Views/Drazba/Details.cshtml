@@ -53,7 +53,7 @@
 			$('#znesek').attr('disabled', true);
 
 		    
-			var val = @Model.Id 
+			var val = @Model.Id; 
 		    $.post('<%= Url.Action("Account/PosljiEmail") %>', { value: val }, function (result) {
 		        // TODO: handle the success
 		        alert('Dražba je končana!');
@@ -78,87 +78,83 @@
 		{
 			<h2>Trenutna ponudba: <strong>@ViewData["trenutnaPonudba"]€</strong>
 			</h2>
-			
-			
+
+            if (Request.IsAuthenticated) { 
 			@Html.HiddenFor(d => d.Id)
 			@Html.Editor("znesek", new { htmlAttributes = new { @class = "form-control", Type = "number", Placeholder = "Nova ponudba", min = @ViewData["minPonudba"], style="margin-left:10%" } })
-			<input type="submit" class="btn btn-info" value="Oddaj" style="margin-left: 40%; margin-top: 5%;" id="submitZnesek"/>
-		}
-		<div align="center" style="margin-top: 2%">
-			@Html.ActionLink(
-			"Zgodovina Sprememb",
-			"Index",                         // controller action
-			"Ponudba",        // controller
-			new { Model.Id },         // action parameters aka route values
-			new { @class = "btn btn-info" })
-		</div>
+
+                <input type="submit" class="btn btn-info" value="Oddaj" style="margin-left: 40%; margin-top: 5%;" id="submitZnesek"/>
+            }
+        }
+        
+	    <div align="center" style="margin-top: 2%">
+	        @Html.ActionLink(
+	            "Zgodovina Sprememb",
+	            "Index",                         // controller action
+	            "Ponudba",        // controller
+	            new { Model.Id },         // action parameters aka route values
+	            new { @class = "btn btn-info" })
+	    </div>
+       
 	   
 	</div>
-	<dl class="dl-horizontal" style="float: left;font-size: 17px"><!-- podatki o dražbi -->
-		<dt>
-			@Html.DisplayNameFor(model => model.DatumOd)
-		</dt>
+    <dl class="dl-horizontal" style="float: left;font-size: 17px">
+        <!-- podatki o dražbi -->
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumOd)
+        </dt>
 
-		<dd>
-			@Html.DisplayFor(model => model.DatumOd)
-		</dd>
+        <dd>
+            @Html.DisplayFor(model => model.DatumOd)
+        </dd>
 
-		<dt>
-			@Html.DisplayNameFor(model => model.DatumDo)
-		</dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.DatumDo)
+        </dt>
 
-		<dd id="konec_drazbe">
-			@Html.DisplayFor(model => model.DatumDo)
-		</dd>
+        <dd id="konec_drazbe">
+            @Html.DisplayFor(model => model.DatumDo)
+        </dd>
 
-		<dt>
-			@Html.DisplayNameFor(model => model.Ime)
-		</dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ime)
+        </dt>
 
-		<dd>
-			@Html.DisplayFor(model => model.Ime)
-		</dd>
+        <dd>
+            @Html.DisplayFor(model => model.Ime)
+        </dd>
 
-		<dt>
-			@Html.DisplayNameFor(model => model.NazivPredmeta)
-		</dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.NazivPredmeta)
+        </dt>
 
-		<dd>
-			@Html.DisplayFor(model => model.NazivPredmeta)
-		</dd>
+        <dd>
+            @Html.DisplayFor(model => model.NazivPredmeta)
+        </dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Opis)
+    </dt>
 
-		<dt>
-            @Html.DisplayNameFor(model => model.User.FirstName) @Html.DisplayNameFor(model => model.User.LastName)
-		</dt>
+    <dd>
+        @Html.DisplayFor(model => model.Opis)
+    </dd>
 
-		<dd>
-			@Html.DisplayFor(model => model.Uporabnik)
-		</dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.ZacetnaCena)
+    </dt>
 
-		<dt>
-			@Html.DisplayNameFor(model => model.Opis)
-		</dt>
+    <dd>
+        @Html.DisplayFor(model => model.ZacetnaCena)
+    </dd>
 
-		<dd>
-			@Html.DisplayFor(model => model.Opis)
-		</dd>
+    <dt>
+        @Html.DisplayNameFor(model => model.Kategorija)
+    </dt>
 
-		<dt>
-			@Html.DisplayNameFor(model => model.ZacetnaCena)
-		</dt>
-
-		<dd>
-			@Html.DisplayFor(model => model.ZacetnaCena)
-		</dd>
-
-		<dt>
-			@Html.DisplayNameFor(model => model.Kategorija)
-		</dt>
-
-		<dd>
-			@Html.DisplayFor(model => model.Kategorija)
-		</dd>
-	</dl>
+    <dd>
+        @Html.DisplayFor(model => model.Kategorija)
+    </dd>
+</dl>
 </div>
 @{ 
 
@@ -188,8 +184,4 @@
 
 }
 			
-
-<p style="clear: both;">
-	@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-	@Html.ActionLink("Back to List", "Index")
-</p>
+<hr style="clear: both;"/>

@@ -62,6 +62,7 @@ namespace SpletnaDrazba.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 db.Ponudba.Add(ponudba);
                 db.SaveChanges();
                 return RedirectToAction("Index");

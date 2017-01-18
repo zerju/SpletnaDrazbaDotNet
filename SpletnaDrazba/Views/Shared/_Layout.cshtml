@@ -24,7 +24,10 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Domov", "Index", "Home")</li>
                     <li>@Html.ActionLink("Kategorije", "AllCategories", "Category")</li>
-                    <li>@Html.ActionLink("Moje dražbe", "Index", "Drazba")</li>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Moje dražbe", "Index", "Drazba")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

@@ -19,7 +19,9 @@ namespace SpletnaDrazba.Controllers
         // GET: Drazba
         public ActionResult Index()
         {
-            return View(db.Drazbas.ToList());
+            string userID = (string)Session["CurrentUserID"];
+            List<Drazba> drazbe = db.Drazbas.Where(d => d.User.Id.Equals(userID)).ToList();
+            return View(drazbe);
         }
 
         // GET: Drazba/Details/5
@@ -89,7 +91,7 @@ namespace SpletnaDrazba.Controllers
             {
                 drazba.Slike = filePathList;
                 var userId = Session["CurrentUserID"];
-                ApplicationUser user = db.Users.Find(userId);
+                var user = db.Users.Find(userId);
                 drazba.User = user;
                 db.Drazbas.Add(drazba);
                 db.SaveChanges();

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "SubCategories";
+}
+
+<h2>SubCategories</h2>
+@{ List<String> list = (List<String>) @ViewData["Categories"];}
+@foreach (var category in list)
+{
+    <div class="jumbotron" style="padding-top: 0%">
+        <a href="@Url.Action("CategoryItems", "Category",new { category = @category})">
+            <h2>@category</h2>
+            <img src="~/Content/images/@(category).png" height="250px" width="30%" />
+        </a>
+    </div>
+}
+
