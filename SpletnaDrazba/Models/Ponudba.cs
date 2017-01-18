@@ -14,6 +14,8 @@ namespace SpletnaDrazba.Models
         public virtual Drazba Drazba { get; set; }
         [Display(Name="Datum Oddaje")]
         public DateTime DatumOddaje { get; set; }
+        
         public virtual ApplicationUser User { get; set; }
+
     }
 }
