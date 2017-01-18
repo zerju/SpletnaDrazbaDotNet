@@ -74,18 +74,23 @@ namespace SpletnaDrazba.Controllers
             int trenutniID = db.Drazbas.Max(item => item.Id)+1;
             foreach (var file in picture.Files)
             {
-                var filename = Path.GetFileName(file.FileName);
-                var path = Path.Combine(Server.MapPath("~/Content/images"), +trenutniID + filename);
-                string semicolumn = "";
-                if (count > 0)
-                    semicolumn = ";";
-                filePathList = filePathList+semicolumn+"~/Content/images/"+ trenutniID + filename;
-                file.SaveAs(path);
+                if(file != null) { 
+                    var filename = Path.GetFileName(file.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Content/images"), +trenutniID + filename);
+                    string semicolumn = "";
+                    if (count > 0)
+                        semicolumn = ";";
+                    filePathList = filePathList+semicolumn+"~/Content/images/"+ trenutniID + filename;
+                    file.SaveAs(path);
+                }
                 count++;
             }
             if (ModelState.IsValid)
             {
                 drazba.Slike = filePathList;
+                var userId = Session["CurrentUserID"];
+                ApplicationUser user = db.Users.Find(userId);
+                drazba.User = user;
                 db.Drazbas.Add(drazba);
                 db.SaveChanges();
                 return RedirectToAction("Index");

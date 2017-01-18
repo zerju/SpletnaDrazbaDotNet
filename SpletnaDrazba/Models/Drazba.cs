@@ -21,6 +21,8 @@ namespace SpletnaDrazba.Models
         public string Ime { get; set; }
         [Display(Name = "Naziv Predmeta")]
         public string NazivPredmeta { get; set; }
+        public ApplicationUser User { get; set; }
+
         public string Uporabnik { get; set; }
         public string Opis { get; set; }
         [Display(Name = "Začetna cena (€)")]
