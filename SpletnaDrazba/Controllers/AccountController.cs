@@ -407,14 +407,13 @@ namespace SpletnaDrazba.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        // POST: /Account/PosljiEmail
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult PosljiEmail(int idDrazbe)
+        // GET: /Account/PosljiEmail
+        [HttpGet]
+        public ActionResult PosljiEmail(int val)
         {
-            var drazba = db.Drazbas.Find(idDrazbe);
+            var drazba = db.Drazbas.Find(val);
             //var ponudba = db.Ponudba.Max(Znesek);
-            var ponudbe = db.Ponudba.Where(p => p.Drazba.Id == idDrazbe);
+            var ponudbe = db.Ponudba.Where(p => p.Drazba.Id == val);
             var zadnjaPonudba = ponudbe.OrderByDescending(p => p.Id).FirstOrDefault();
 
             string mailKupec = zadnjaPonudba.User.Email;
@@ -423,6 +422,7 @@ namespace SpletnaDrazba.Controllers
             MailMessage mail = new MailMessage();
 
             SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+            smtpServer.EnableSsl = true;
             smtpServer.Credentials = new System.Net.NetworkCredential("drazbajina", "administrato");
             smtpServer.Port = 587; // Gmail works on this port
 
@@ -430,12 +430,13 @@ namespace SpletnaDrazba.Controllers
             //mailKupec
             mail.To.Add("drazbajina@gmail.com");
             mail.Subject = "Dražba se je končala";
-            mail.Body = "Vaša dražba z IDjem " + idDrazbe +" se je končala. Najvišjo ponudbo je oddal uporabnik " + mailKupec + ". Preko tega Emaila ga lahko tudi kontaktirate. ";
+            mail.Body = "Vaša dražba z imenom" + drazba.Ime + " se je končala. Najvišjo ponudbo je oddal uporabnik z imenom " + zadnjaPonudba.User.FirstName + zadnjaPonudba.User.LastName + ". Kontaktirate ga lahko preko " + mailKupec;
             smtpServer.Send(mail);
 
             MailMessage mail2 = new MailMessage();
 
             SmtpClient smtpServer2 = new SmtpClient("smtp.gmail.com");
+            smtpServer2.EnableSsl = true;
             smtpServer2.Credentials = new System.Net.NetworkCredential("drazbajina", "administrato");
             smtpServer2.Port = 587; // Gmail works on this port
 
@@ -443,7 +444,7 @@ namespace SpletnaDrazba.Controllers
             //mailProdajalec
             mail2.To.Add("drazbajina@gmail.com");
             mail2.Subject = "Dražba se je končala";
-            mail2.Body = "Čestitamo! Uspeli ste oddati najvišjo ponudbo na dražbi z IDjem " +idDrazbe + "! Prodajalca lahko kontaktirate preko naslednjega emaila. " + mailProdajalec;
+            mail2.Body = "Čestitamo! Uspeli ste oddati najvišjo ponudbo na dražbi z imenom " + drazba.Ime + "! Ponudili ste "+ zadnjaPonudba.Znesek +"€. Prodajalca lahko kontaktirate preko naslednjega emaila. " + mailProdajalec;
             smtpServer2.Send(mail2);
 
             return RedirectToAction("Index", "Home");
