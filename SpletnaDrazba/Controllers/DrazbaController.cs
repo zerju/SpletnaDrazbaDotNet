@@ -101,6 +101,9 @@ namespace SpletnaDrazba.Controllers
             Ponudba ponudba = new Ponudba();
             ponudba.Drazba = drazba;
             ponudba.Znesek = znesek;
+            var userId = Session["CurrentUserID"];
+            var user = db.Users.Find(userId);
+            ponudba.User = user;
             ponudba.DatumOddaje = DateTime.Now;
             db.Ponudba.Add(ponudba);
             db.SaveChanges();

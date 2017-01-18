@@ -180,6 +180,7 @@
     <Compile Include="Controllers\DrazbaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PonudbaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -218,6 +219,14 @@
     <Compile Include="Migrations\201701171906302_FirstName.cs" />
     <Compile Include="Migrations\201701171906302_FirstName.Designer.cs">
       <DependentUpon>201701171906302_FirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701180920348_SpremenjenaPonudba.cs" />
+    <Compile Include="Migrations\201701180920348_SpremenjenaPonudba.Designer.cs">
+      <DependentUpon>201701180920348_SpremenjenaPonudba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701180954249_DeletedUserNameAndLast.cs" />
+    <Compile Include="Migrations\201701180954249_DeletedUserNameAndLast.Designer.cs">
+      <DependentUpon>201701180954249_DeletedUserNameAndLast.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -303,6 +312,11 @@
     <Content Include="Views\Drazba\Details.cshtml" />
     <Content Include="Views\Drazba\Edit.cshtml" />
     <Content Include="Views\Drazba\Index.cshtml" />
+    <Content Include="Views\Ponudba\Create.cshtml" />
+    <Content Include="Views\Ponudba\Delete.cshtml" />
+    <Content Include="Views\Ponudba\Details.cshtml" />
+    <Content Include="Views\Ponudba\Edit.cshtml" />
+    <Content Include="Views\Ponudba\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -342,6 +356,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701171906302_FirstName.resx">
       <DependentUpon>201701171906302_FirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701180920348_SpremenjenaPonudba.resx">
+      <DependentUpon>201701180920348_SpremenjenaPonudba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701180954249_DeletedUserNameAndLast.resx">
+      <DependentUpon>201701180954249_DeletedUserNameAndLast.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

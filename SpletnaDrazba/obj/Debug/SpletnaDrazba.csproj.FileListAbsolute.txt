@@ -155,3 +155,10 @@ C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDot
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.RegistracijaMigration.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ImeRegistracija.resources
 C:\Users\Andry\Documents\Visual Studio 2015\Projects\drazbaRIRS\SpletnaDrazbaDotNet\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.FirstName.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.newModel.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ponudbaModel.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.RegistracijaMigration.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.ImeRegistracija.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.FirstName.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.SpremenjenaPonudba.resources
+D:\RIRSdotNet\SpletnaDrazba\SpletnaDrazba\obj\Debug\SpletnaDrazba.Migrations.DeletedUserNameAndLast.resources
