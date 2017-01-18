@@ -15,6 +15,7 @@ namespace SpletnaDrazba.Controllers
     [Authorize]
     public class AccountController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
@@ -79,14 +80,23 @@ namespace SpletnaDrazba.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    {
+                        var user = db.Users.Where(u => u.Email.Equals(model.Email)).FirstOrDefault();
+                        if (user == null)
+                        {
+                            ModelState.AddModelError("", "Neuspešna prijava!");
+                            return View(model);
+                        }
+                        Session["CurrentUserID"] = user.Id;
+                        return RedirectToLocal(returnUrl);
+                    }
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
+                    ModelState.AddModelError("", "Neuspešna prijava!");
                     return View(model);
             }
         }
@@ -156,7 +166,7 @@ namespace SpletnaDrazba.Controllers
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+                    Session["CurrentUserID"] = user.Id;
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
